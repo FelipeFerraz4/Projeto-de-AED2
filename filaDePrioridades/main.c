@@ -27,11 +27,11 @@ int main()
 {
     FilaPrio *fp;
     Nave *dados;
-    consulta(fp, dados);
+    //consulta(fp, dados);
     dados = (Nave*)malloc(sizeof(Nave));
     inserirNaves(dados);
     fp = cria();
-    fp->naves[fp->qtd] = dados;
+    //fp->naves[fp->qtd] = dados;
     insere(fp,20);
 
     return 0;

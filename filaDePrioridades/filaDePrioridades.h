@@ -30,11 +30,14 @@ typedef struct nave_espacial Nave;
 
 FilaPrio* cria();
 void libera(FilaPrio*);
-int consulta(FilaPrio*, Nave );
-int insere(FilaPrio*, int );
-int remov(FilaPrio*, int);
+
 int tamanho(FilaPrio* );
 int cheia(FilaPrio* );
 int vazia(FilaPrio* );
+
+int consulta(FilaPrio*, Nave );
+int insere(FilaPrio*, int );
+int remov(FilaPrio*, int);
+
 
 #endif // FILADEPRIORIDADES_H_INCLUDED
