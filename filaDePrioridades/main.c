@@ -2,22 +2,18 @@
 #include <stdlib.h>
 #include "filaDePrioridades.h"
 
-void inserirNaves(struct Nave *dados){
+void inserirNaves(Nave *dados){
     int i = 0;
-    struct passageiro *pass;
-    /*pass =(struct passageiro*)malloc(sizeof(struct passageiro));*/
-    struct recursos_transportados *recur;
-    printf("\nDigite a idade do passageiro: ");
-    scanf("%d",pass->idade);
-    printf("\nDigite o nome do passageiro: ");
-    fflush(stdin);
-    scanf("%s", pass->nome);
-    printf("\nDigite o planeta do passageiro: ");
-    fflush(stdin);
-    scanf("%d", pass->planeta);
-    printf("Quais recursos estão sendo transportados: ");
-    fflush(stdin);
-    scanf("%s", recur->recursos);
+    Passageiro passageiro1;
+    Recurso recurso1;
+    printf("Digite o nome do passageiro: \n");
+    scanf("%s", passageiro1.nome);
+    printf("Digite a idade do passageiro: \n");
+    scanf("%d", &passageiro1.idade);
+    printf("Digite o planeta do passageiro: \n");
+    scanf("%s", passageiro1.planeta);
+    printf("Nome do recurso transportados: \n");
+    scanf("%s", recurso1.nome);
     /*dados->passageiro[i] = pass;
     dados->rt[i] = recur;*/
     i++;
@@ -32,7 +28,7 @@ int main()
     inserirNaves(dados);
     fp = cria();
     //fp->naves[fp->qtd] = dados;
-    insere(fp,20);
+    //insere(fp,20);
 
     return 0;
 }

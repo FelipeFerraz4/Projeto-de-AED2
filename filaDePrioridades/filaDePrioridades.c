@@ -8,11 +8,11 @@ FilaPrio* cria(){
     FilaPrio *fp;
     fp = (FilaPrio*)malloc(sizeof(FilaPrio));
     if( fp != NULL){
-        fp->qtd = 0;
+        fp->size_nave = 0;
     }
     return fp;
 }
-
+/*
 //insere uma nave na fila
 int insere(FilaPrio *fp, int prio){
     if(fp == NULL)
@@ -21,24 +21,26 @@ int insere(FilaPrio *fp, int prio){
         return 0;
     }
 
-    fp->naves[fp->qtd].prioridade = prio;
-    subir(fp, fp->qtd);
-    fp->qtd++;
+    fp->naves[fp->size_nave].prioridade = prio;
+    subir(fp, fp->size_nave);
+    fp->size_nave++;
     return 1;
 }
-
+*/
+/*
 int remov(FilaPrio *fp, int prio){
     if(fp == NULL)
         return 0;
     if(vazia(fp)){
         return 0;
     }
-    fp->qtd--;
-    fp->naves[0] = fp->naves[fp->qtd];
+    fp->size_nave--;
+    fp->naves[0] = fp->naves[fp->size_nave];
     descer(fp, 0);
     return 1;
 }
-
+*/
+/*
 int consulta(FilaPrio *fp, Nave n){
     if(fp == NULL || vazia(fp))
         return 0;
@@ -59,12 +61,13 @@ void subir(FilaPrio *fp, int filho){
         pai = (pai - 1) / 2;
     }
 }
+*/
 
 void descer(FilaPrio *fp, int pai){
     struct nave_espacial temp;
     int filho = 2 * pai + 1;
-    while(filho < fp->qtd){
-        if(filho < fp->qtd-1){
+    while(filho < fp->size_nave){
+        if(filho < fp->size_nave-1){
             if(fp->naves[filho].prioridade < fp->naves[filho + 1].prioridade){
                 filho++;
             }
@@ -91,24 +94,24 @@ int tamanho(FilaPrio *fp){
     if(fp == NULL){
         return -1;
     }else{
-        return fp->qtd;
+        return fp->size_nave;
     }
 }
-
+/*
 int cheia(FilaPrio *fp){
     if(fp == NULL){
         return -1;
-    }else if(fp->qtd == MAX){
+    }else if(fp->size_nave == MAX){
         return 1;
     }else{
         return 0;
     }
 }
-
+*/
 int vazia(FilaPrio *fp){
     if(fp == NULL){
         return -1;
-    }else if(fp->qtd == 0){
+    }else if(fp->size_nave == 0){
         return 1;
     }else{
         return 0;

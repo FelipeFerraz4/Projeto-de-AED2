@@ -1,33 +1,31 @@
 #ifndef FILADEPRIORIDADES_H_INCLUDED
 #define FILADEPRIORIDADES_H_INCLUDED
-#define MAX 50
-#define MAXPR 50
+#define MAX_DEFAULT 50
 
-struct passageiro{
+typedef struct passageiro{
     int id;
     int idade;
-    char nome[25];
-    char planeta[30];
-};
+    char nome[MAX_DEFAULT];
+    char planeta[MAX_DEFAULT];
+}Passageiro;
 
-struct recursos_transportados{
-    char recursos[30];
+typedef struct recurso{
+    char nome[MAX_DEFAULT];
     int quantidade;
-};
+}Recurso;
 
-struct nave_espacial{
+typedef struct nave_espacial{
     int prioridade;
-    struct passageiro pa[MAXPR];
-    struct recursos_transportados rt[MAXPR];
-};
+    int size_passageiro;
+    int size_recursos_transportados;
+    Passageiro passageiros[MAX_DEFAULT];
+    Recurso recurso[MAX_DEFAULT];
+}Nave;
 
-struct fila_prioridade{
-    int qtd;
-    struct nave_espacial naves[MAX];
-};
-
-typedef struct fila_prioridade FilaPrio;
-typedef struct nave_espacial Nave;
+typedef struct fila_prioridade{
+    int size_nave;
+    Nave naves[MAX_DEFAULT];
+}FilaPrio;
 
 FilaPrio* cria();
 void libera(FilaPrio*);
@@ -36,9 +34,10 @@ int tamanho(FilaPrio* );
 int cheia(FilaPrio* );
 int vazia(FilaPrio* );
 
-int consulta(FilaPrio*, Nave );
-int insere(FilaPrio*, int );
-int remov(FilaPrio*, int);
-
+/*
+int consulta(FilaPrio*);
+int insere(FilaPrio*);
+int remov(FilaPrio*);
+*/
 
 #endif // FILADEPRIORIDADES_H_INCLUDED
