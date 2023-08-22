@@ -12,6 +12,7 @@ struct passageiro{
 
 struct recursos_transportados{
     char recursos[30];
+    int quantidade;
 };
 
 struct nave_espacial{
