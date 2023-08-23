@@ -12,23 +12,23 @@ FilaPrio* criar_heap(){
     }
     return fp;
 }
-/*
+
 //insere uma nave na fila
-int insere(FilaPrio *fp, int prio){
+int insere(FilaPrio *fp, Nave nave){
     if(fp == NULL)
         return 0;
     if(cheia(fp)){
         return 0;
     }
 
-    fp->naves[fp->size_nave].prioridade = prio;
+    fp->naves[fp->size_nave] = nave;
     subir(fp, fp->size_nave);
     fp->size_nave++;
     return 1;
 }
-*/
-/*
-int remov(FilaPrio *fp, int prio){
+
+
+int remov(FilaPrio *fp){
     if(fp == NULL)
         return 0;
     if(vazia(fp)){
@@ -39,7 +39,7 @@ int remov(FilaPrio *fp, int prio){
     descer(fp, 0);
     return 1;
 }
-*/
+
 /*
 int consulta(FilaPrio *fp, Nave n){
     if(fp == NULL || vazia(fp))
@@ -47,13 +47,14 @@ int consulta(FilaPrio *fp, Nave n){
     n = fp->naves[0];
     return 1;
 }
+*/
 
 //realoca a nova nave inserida na posição de prioridade correta
 void subir(FilaPrio *fp, int filho){
     int pai;
-    struct nave_espacial temp;
+    Nave temp;
     pai = (filho - 1) / 2;
-    while((filho > 0) && (fp->naves[pai].prioridade <= fp->naves[filho].prioridade)){
+    while((filho > 0) && (fp->naves[pai].prioridade < fp->naves[filho].prioridade)){
         temp = fp->naves[filho];
         fp->naves[filho] = fp->naves[pai];
         fp->naves[pai] = temp;
@@ -61,7 +62,7 @@ void subir(FilaPrio *fp, int filho){
         pai = (pai - 1) / 2;
     }
 }
-*/
+
 
 void descer(FilaPrio *fp, int pai){
     struct nave_espacial temp;
@@ -97,17 +98,17 @@ int tamanho(FilaPrio *fp){
         return fp->size_nave;
     }
 }
-/*
+
 int cheia(FilaPrio *fp){
     if(fp == NULL){
         return -1;
-    }else if(fp->size_nave == MAX){
+    }else if(fp->size_nave == MAX_DEFAULT){
         return 1;
     }else{
         return 0;
     }
 }
-*/
+
 int vazia(FilaPrio *fp){
     if(fp == NULL){
         return -1;

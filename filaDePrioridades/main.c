@@ -37,6 +37,8 @@ Nave get_nave(){
 
     nave1.prioridade = rand() % 100;
 
+    printf("\n%d\n", nave1.prioridade);
+
     printf("Quantos passageiros a nave possui: \n");
     scanf("%d", &nave1.size_passageiro);
 
@@ -54,13 +56,44 @@ Nave get_nave(){
     return nave1;
 }
 
+void menu(){
+    printf("\n\t[ MENU ]");
+    printf("\n[1] - Inserir naves\n[2] - Remover nave\n[3] - Imprimir naves\n[4] - Sair\n");
+}
+
 int main()
 {
     srand((unsigned)time(NULL));
+    int option = 0;
 
-    FilaPrio heap;
-    heap.size_nave = 1;
-    heap.naves[0] = get_nave();
+    FilaPrio *heap;
+    heap = criar_heap();
+
+    do{
+        menu();
+        printf("\nEscolha uma opção: ");
+        scanf("%d",&option);
+        switch(option){
+            case 1:
+                insere(heap, get_nave());
+            break;
+            case 2:
+                remov(heap);
+            break;
+            case 3:
+                for(int i = 0; i < heap->size_nave; i++){
+                    printf("\nNave[%d] - Prioridade: %d", i+1, heap->naves[i].prioridade);
+                }
+                printf("\n");
+            break;
+            case 4:
+                printf("\nAté breve :)");
+            break;
+            default:
+                printf("\nOPÇÃO INVÁLIDA\n");
+            break;
+    }
+    }while(option != 4);
 
     return 0;
 }

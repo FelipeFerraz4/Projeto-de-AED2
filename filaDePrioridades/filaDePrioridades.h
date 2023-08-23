@@ -33,11 +33,11 @@ void libera(FilaPrio*);
 int tamanho(FilaPrio* );
 int cheia(FilaPrio* );
 int vazia(FilaPrio* );
+int insere(FilaPrio*, Nave);
+int remov(FilaPrio*);
 
 /*
 int consulta(FilaPrio*);
-int insere(FilaPrio*);
-int remov(FilaPrio*);
 */
 
 #endif // FILADEPRIORIDADES_H_INCLUDED
