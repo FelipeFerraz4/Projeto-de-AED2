@@ -51,6 +51,7 @@ Nave get_nave(){
         nave1.recurso[i] = get_recurso();
     }
 
+    return nave1;
 }
 
 int main()

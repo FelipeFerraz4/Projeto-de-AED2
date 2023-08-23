@@ -4,7 +4,7 @@
 #include "filaDePrioridades.h"
 
 //cria na memória uma lista estática
-FilaPrio* cria(){
+FilaPrio* criar_heap(){
     FilaPrio *fp;
     fp = (FilaPrio*)malloc(sizeof(FilaPrio));
     if( fp != NULL){

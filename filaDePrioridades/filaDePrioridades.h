@@ -27,7 +27,7 @@ typedef struct fila_prioridade{
     Nave naves[MAX_DEFAULT];
 }FilaPrio;
 
-FilaPrio* cria();
+FilaPrio* criar_heap();
 void libera(FilaPrio*);
 
 int tamanho(FilaPrio* );
