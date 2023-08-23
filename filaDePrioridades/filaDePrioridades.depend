@@ -17,10 +17,11 @@
 	<string.h>
 	"filaDePrioridades.h"
 
-1692747410 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.h
+1692748014 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.h
 
-1692747881 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\main.c
+1692748906 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\main.c
 	<stdio.h>
 	<stdlib.h>
+	<time.h>
 	"filaDePrioridades.h"
 

@@ -4,8 +4,8 @@
 
 typedef struct passageiro{
     int id;
-    int idade;
     char nome[MAX_DEFAULT];
+    int idade;
     char planeta[MAX_DEFAULT];
 }Passageiro;
 
