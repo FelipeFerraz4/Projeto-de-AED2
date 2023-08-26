@@ -35,9 +35,12 @@ Recurso get_recurso(){
 Nave get_nave(){
     Nave nave1;
 
-    nave1.prioridade = rand() % 100;
+    nave1.tipo_nave = 1 + rand() % 10;
+    nave1.prioridade = rand() % 100 * nave1.tipo_nave;
 
-    printf("\n%d\n", nave1.prioridade);
+
+    printf("\nprioridade: %d\n", nave1.prioridade);
+    printf("\nTipo da nave: %d\n", nave1.tipo_nave);
 
     printf("Quantos passageiros a nave possui: \n");
     scanf("%d", &nave1.size_passageiro);

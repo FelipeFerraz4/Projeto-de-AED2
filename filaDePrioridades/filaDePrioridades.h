@@ -16,6 +16,7 @@ typedef struct recurso{
 
 typedef struct nave_espacial{
     int prioridade;
+    int tipo_nave;
     int size_passageiro;
     int size_recursos_transportados;
     Passageiro passageiros[MAX_DEFAULT];

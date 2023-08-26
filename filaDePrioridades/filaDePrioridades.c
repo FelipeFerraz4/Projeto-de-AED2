@@ -20,7 +20,6 @@ int insere(FilaPrio *fp, Nave nave){
     if(cheia(fp)){
         return 0;
     }
-
     fp->naves[fp->size_nave] = nave;
     subir(fp, fp->size_nave);
     fp->size_nave++;
@@ -65,7 +64,7 @@ void subir(FilaPrio *fp, int filho){
 
 
 void descer(FilaPrio *fp, int pai){
-    struct nave_espacial temp;
+    Nave temp;
     int filho = 2 * pai + 1;
     while(filho < fp->size_nave){
         if(filho < fp->size_nave-1){
