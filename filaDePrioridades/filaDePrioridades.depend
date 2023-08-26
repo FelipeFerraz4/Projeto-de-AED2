@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1691413608 source:/home/lucas/Documentos/UFCA/AED2/filaDePrioridades/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1691420355 source:/home/lucas/Documentos/UFCA/AED2/filaDePrioridades/filaDePrioridades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"filaDePrioridades.h"
+
+1691420360 /home/lucas/Documentos/UFCA/AED2/filaDePrioridades/filaDePrioridades.h
+
+1692749361 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"filaDePrioridades.h"
+
+1692749361 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.h
+
+1692749441 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"filaDePrioridades.h"
+
+1693049225 source:/home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/filaDePrioridades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"filaDePrioridades.h"
+
+1693049235 /home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/filaDePrioridades.h
+
+1693049335 source:/home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"filaDePrioridades.h"
+
