@@ -29,16 +29,20 @@ typedef struct fila_prioridade{
 }FilaPrio;
 
 FilaPrio* criar_heap();
-void libera(FilaPrio*);
 
+//CRUD
+int inserir(FilaPrio*, Nave);
+int remover(FilaPrio*);
+//int consultar(FilaPrio*);
+
+//funções auxiliares
+void subir(FilaPrio*, int);
+void descer(FilaPrio*, int);
+void libera(FilaPrio*);
+int vazia(FilaPrio* );
 int tamanho(FilaPrio* );
 int cheia(FilaPrio* );
-int vazia(FilaPrio* );
-int insere(FilaPrio*, Nave);
-int remov(FilaPrio*);
 
-/*
-int consulta(FilaPrio*);
-*/
+
 
 #endif // FILADEPRIORIDADES_H_INCLUDED

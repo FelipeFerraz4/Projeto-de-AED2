@@ -45,14 +45,14 @@ Nave get_nave(){
     printf("Quantos passageiros a nave possui: \n");
     scanf("%d", &nave1.size_passageiro);
 
-    for(int i = 0; i < nave1.size_passageiro; i++){
+    for(int i = 1; i <= nave1.size_passageiro; i++){
         nave1.passageiros[i] = get_passageiro();
     }
 
     printf("Quantos recursos a nave possui: \n");
     scanf("%d", &nave1.size_recursos_transportados);
 
-    for(int i = 0; i < nave1.size_recursos_transportados; i++){
+    for(int i = 1; i <= nave1.size_recursos_transportados; i++){
         nave1.recurso[i] = get_recurso();
     }
 
@@ -78,14 +78,20 @@ int main()
         scanf("%d",&option);
         switch(option){
             case 1:
-                insere(heap, get_nave());
+                if(inserir(heap, get_nave()))
+                    printf("\nNave inserida com sucesso!!\n");
+                else
+                    printf("\nErro ao inserir nave, fila cheia\n");
             break;
             case 2:
-                remov(heap);
+                if(remover(heap))
+                    printf("\nNave removida com sucesso!!\n");
+                else
+                    printf("\nErro ao remover nave, fila vazia\n");
             break;
             case 3:
-                for(int i = 0; i < heap->size_nave; i++){
-                    printf("\nNave[%d] - Prioridade: %d", i+1, heap->naves[i].prioridade);
+                for(int i = 1; i < heap->size_nave; i++){
+                    printf("\nNave[%d] - Prioridade: %d", i, heap->naves[i].prioridade);
                 }
                 printf("\n");
             break;
