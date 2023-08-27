@@ -4,6 +4,7 @@
 #include <time.h>
 #include "filaDePrioridades.h"
 
+<<<<<<< HEAD
 #define MAX_TAMANHO_LINHA_FILE 500
 
 int get_nave_file(FilaPrio *heap){
@@ -85,6 +86,10 @@ int get_nave_file(FilaPrio *heap){
     return 1;
 }
 
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 540f07e (Refatoração das funções subir e descer)
 Passageiro get_passageiro(){
     Passageiro passageiro1;
 
@@ -146,6 +151,10 @@ void menu(){
     printf("\n[1] - Inserir naves\n[2] - Remover nave\n[3] - Imprimir naves\n[4] - Sair\n");
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> 891b19c (Refatoração das funções subir e descer)
+>>>>>>> 540f07e (Refatoração das funções subir e descer)
 int main()
 {
     Heap *fila_de_naves;
@@ -153,11 +162,25 @@ int main()
 
     get_nave_file(fila_de_naves);
 
+<<<<<<< HEAD
     get_nave_file(heap);
 
     do{
         menu();
         printf("\nEscolha uma opcao: ");
+=======
+<<<<<<< HEAD
+    //teste_heap(fila_de_naves);
+    option_programa(fila_de_naves);
+
+    printf("Hello world!\n");
+
+    libera_heap(fila_de_naves);
+=======
+    do{
+        menu();
+        printf("\nEscolha uma opção: ");
+>>>>>>> 540f07e (Refatoração das funções subir e descer)
         scanf("%d",&option);
         switch(option){
             case 1:
@@ -179,6 +202,7 @@ int main()
                 printf("\n");
             break;
             case 4:
+<<<<<<< HEAD
                 printf("\nAte breve :)");
             break;
             default:
@@ -186,6 +210,16 @@ int main()
             break;
     }
     }while(option != 4);
+=======
+                printf("\nAté breve :)");
+            break;
+            default:
+                printf("\nOPÇÃO INVÁLIDA\n");
+            break;
+    }
+    }while(option != 4);
+>>>>>>> 891b19c (Refatoração das funções subir e descer)
+>>>>>>> 540f07e (Refatoração das funções subir e descer)
 
     return 0;
 }

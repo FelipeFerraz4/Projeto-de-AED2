@@ -17,15 +17,28 @@
 	<string.h>
 	"filaDePrioridades.h"
 
+<<<<<<< HEAD
 1693187047 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.h
 
 1693187204 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\main.c
+=======
+<<<<<<< HEAD
+1693049225 source:/home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/filaDePrioridades.c
+=======
+1692749361 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.h
+
+1692749441 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\main.c
+>>>>>>> 540f07e (Refatoração das funções subir e descer)
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"filaDePrioridades.h"
 
 1693179773 source:/home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/filaDePrioridades.c
+<<<<<<< HEAD
+=======
+>>>>>>> 891b19c (Refatoração das funções subir e descer)
+>>>>>>> 540f07e (Refatoração das funções subir e descer)
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
