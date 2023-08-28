@@ -1,7 +1,89 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 #include "filaDePrioridades.h"
+
+#define MAX_TAMANHO_LINHA_FILE 500
+
+int get_nave_file(FilaPrio *heap){
+    char buffer[MAX_TAMANHO_LINHA_FILE];
+    int count = 0;
+
+    FILE* file = fopen("naves.csv", "r");
+
+    if (file == NULL){
+        printf("Erro ao abrir o arquivo. \n");
+        return 0;
+    }
+
+    //paga a primeira linha da lista, que tem o nome dos parametos
+    fgets(buffer, sizeof(buffer), file);
+
+    //leitura do arquivo até ler uma linha nula
+    while(fgets(buffer, sizeof(buffer), file) != NULL){
+        Nave nave;
+
+        char prioridade[20];
+        strcpy(prioridade, strtok(buffer, ","));
+        nave.prioridade = atoi(prioridade);
+
+        char tipo_nave[20];
+        strcpy(tipo_nave, strtok(NULL, ","));
+        nave.tipo_nave = atoi(tipo_nave);
+
+        char quantidade_passageiros[20];
+        strcpy(quantidade_passageiros, strtok(NULL, ","));
+        nave.size_passageiro = atoi(quantidade_passageiros);
+
+        char quantidade_recursos[20];
+        strcpy(quantidade_recursos, strtok(NULL, ","));
+        nave.size_recursos_transportados = atoi(quantidade_recursos);
+
+        for(int i = 0; i < nave.size_passageiro; i++) {
+            Passageiro passageiro;
+
+            char id_passageiro[20];
+            strcpy(id_passageiro, strtok(NULL, ","));
+            passageiro.id = atoi(id_passageiro);
+
+            char nome_passageiro[100];
+            strcpy(nome_passageiro, strtok(NULL, ","));
+            strcpy(passageiro.nome ,nome_passageiro);
+
+            char idade_passageiro[20];
+            strcpy(idade_passageiro, strtok(NULL, ","));
+            passageiro.idade = atoi(idade_passageiro);
+
+            char planeta_passageiro[100];
+            strcpy(planeta_passageiro, strtok(NULL, ","));
+            strcpy(passageiro.planeta ,planeta_passageiro);
+
+            nave.passageiros[i] = passageiro;
+        }
+
+        for(int i = 0; i < nave.size_recursos_transportados; i++){
+            Recurso recurso;
+
+            char quantidade_produto[20];
+            strcpy(quantidade_produto, strtok(NULL, ","));
+            recurso.quantidade = atoi(quantidade_produto);
+
+            char nome_produto[100];
+            strcpy(nome_produto, strtok(NULL, ","));
+            strcpy(recurso.nome ,nome_produto);
+
+            nave.recurso[i] = recurso;
+        }
+
+        heap->naves[count] = nave;
+        count++;
+
+    }
+
+    heap->size_nave = count;
+    return 1;
+}
 
 Passageiro get_passageiro(){
     Passageiro passageiro1;
@@ -72,9 +154,11 @@ int main()
     FilaPrio *heap;
     heap = criar_heap();
 
+    get_nave_file(heap);
+
     do{
         menu();
-        printf("\nEscolha uma opção: ");
+        printf("\nEscolha uma opcao: ");
         scanf("%d",&option);
         switch(option){
             case 1:
@@ -96,10 +180,10 @@ int main()
                 printf("\n");
             break;
             case 4:
-                printf("\nAté breve :)");
+                printf("\nAte breve :)");
             break;
             default:
-                printf("\nOPÇÃO INVÁLIDA\n");
+                printf("\nOPCAO INVÁLIDA\n");
             break;
     }
     }while(option != 4);
