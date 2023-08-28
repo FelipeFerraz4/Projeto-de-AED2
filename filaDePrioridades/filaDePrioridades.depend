@@ -25,3 +25,17 @@
 	<time.h>
 	"filaDePrioridades.h"
 
+1693179773 source:/home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/filaDePrioridades.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"filaDePrioridades.h"
+
+1693179680 /home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/filaDePrioridades.h
+
+1693179758 source:/home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"filaDePrioridades.h"
+

@@ -16,6 +16,7 @@ typedef struct recurso{
 
 typedef struct nave_espacial{
     int prioridade;
+    int tipo_nave;
     int size_passageiro;
     int size_recursos_transportados;
     Passageiro passageiros[MAX_DEFAULT];
@@ -28,16 +29,20 @@ typedef struct fila_prioridade{
 }FilaPrio;
 
 FilaPrio* criar_heap();
-void libera(FilaPrio*);
 
+//CRUD
+int inserir(FilaPrio*, Nave);
+int remover(FilaPrio*);
+//int consultar(FilaPrio*);
+
+//funções auxiliares
+void subir(FilaPrio*, int);
+void descer(FilaPrio*, int);
+void libera(FilaPrio*);
+int vazia(FilaPrio* );
 int tamanho(FilaPrio* );
 int cheia(FilaPrio* );
-int vazia(FilaPrio* );
 
-/*
-int consulta(FilaPrio*);
-int insere(FilaPrio*);
-int remov(FilaPrio*);
-*/
+
 
 #endif // FILADEPRIORIDADES_H_INCLUDED
