@@ -2,10 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <time.h>
 =======
 <<<<<<< HEAD
 >>>>>>> 35490e4 (função para pegar as naves do arquivo)
+=======
+<<<<<<< HEAD
+>>>>>>> 17d11c0 (Atualização)
 #include "filaDePrioridades.h"
 
 <<<<<<< HEAD
@@ -97,6 +101,8 @@ int get_nave_file(FilaPrio *heap){
 >>>>>>> 540f07e (Refatoração das funções subir e descer)
 =======
 =======
+=======
+>>>>>>> 6e4f055 (Atualização)
 #include <time.h>
 #include "filaDePrioridades.h"
 
@@ -245,9 +251,15 @@ void menu(){
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 891b19c (Refatoração das funções subir e descer)
 >>>>>>> 540f07e (Refatoração das funções subir e descer)
+=======
+>>>>>>> 891b19c (Refatoração das funções subir e descer)
+=======
+>>>>>>> 6e4f055 (Atualização)
+>>>>>>> 17d11c0 (Atualização)
 int main()
 {
     Heap *fila_de_naves;
@@ -255,6 +267,7 @@ int main()
 
     get_nave_file(fila_de_naves);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     get_nave_file(heap);
@@ -265,6 +278,8 @@ int main()
 =======
 =======
 >>>>>>> 35490e4 (função para pegar as naves do arquivo)
+=======
+>>>>>>> 17d11c0 (Atualização)
 <<<<<<< HEAD
     //teste_heap(fila_de_naves);
     option_programa(fila_de_naves);
@@ -274,6 +289,8 @@ int main()
     libera_heap(fila_de_naves);
 =======
 =======
+=======
+>>>>>>> 6e4f055 (Atualização)
     get_nave_file(heap);
 
 >>>>>>> 1dbf721 (função para pegar as naves do arquivo)
@@ -315,6 +332,7 @@ int main()
             break;
     }
     }while(option != 4);
+<<<<<<< HEAD
 =======
                 printf("\nAté breve :)");
 =======
@@ -328,6 +346,12 @@ int main()
     }while(option != 4);
 >>>>>>> 891b19c (Refatoração das funções subir e descer)
 >>>>>>> 540f07e (Refatoração das funções subir e descer)
+=======
+<<<<<<< HEAD
+>>>>>>> 891b19c (Refatoração das funções subir e descer)
+=======
+>>>>>>> 6e4f055 (Atualização)
+>>>>>>> 17d11c0 (Atualização)
 
     return 0;
 }

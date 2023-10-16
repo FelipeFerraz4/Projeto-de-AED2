@@ -3,7 +3,10 @@
 #include "filaDePrioridades.h"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 17d11c0 (Atualização)
 <<<<<<< HEAD
 Heap* criar_heap(){
     Heap *fila_de_naves;
@@ -11,7 +14,12 @@ Heap* criar_heap(){
     if(fila_de_naves != NULL){
         fila_de_naves->quantidade_nave = 0;
 =======
+<<<<<<< HEAD
 >>>>>>> 540f07e (Refatoração das funções subir e descer)
+=======
+=======
+>>>>>>> 6e4f055 (Atualização)
+>>>>>>> 17d11c0 (Atualização)
 //cria na memória uma lista estática
 //lista começa no índice 1
 FilaPrio* criar_heap(){
@@ -20,15 +28,24 @@ FilaPrio* criar_heap(){
     if( fp != NULL){
         fp->size_nave = 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 891b19c (Refatoração das funções subir e descer)
 >>>>>>> 540f07e (Refatoração das funções subir e descer)
+=======
+>>>>>>> 891b19c (Refatoração das funções subir e descer)
+=======
+>>>>>>> 6e4f055 (Atualização)
+>>>>>>> 17d11c0 (Atualização)
     }
     return fila_de_naves;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 17d11c0 (Atualização)
 <<<<<<< HEAD
 void libera_heap(Heap* fila_de_naves){
     free(fila_de_naves);
@@ -38,7 +55,12 @@ int tamanho_heap(Heap* fila_de_naves){
     if(fila_de_naves == NULL){
         return -1;
 =======
+<<<<<<< HEAD
 >>>>>>> 540f07e (Refatoração das funções subir e descer)
+=======
+=======
+>>>>>>> 6e4f055 (Atualização)
+>>>>>>> 17d11c0 (Atualização)
 //insere uma nave na heap
 int inserir(FilaPrio *fp, Nave nave){
     if(fp == NULL)
@@ -46,16 +68,25 @@ int inserir(FilaPrio *fp, Nave nave){
     if(cheia(fp)){
         return 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 891b19c (Refatoração das funções subir e descer)
 >>>>>>> 540f07e (Refatoração das funções subir e descer)
+=======
+>>>>>>> 891b19c (Refatoração das funções subir e descer)
+=======
+>>>>>>> 6e4f055 (Atualização)
+>>>>>>> 17d11c0 (Atualização)
     }
     return fila_de_naves->quantidade_nave;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> 17d11c0 (Atualização)
 <<<<<<< HEAD
 int heap_cheio(Heap* fila_de_naves){
     if(fila_de_naves == NULL){
@@ -76,6 +107,8 @@ int heap_vazio(Heap* fila_de_naves){
     }
     return 0;
 =======
+=======
+>>>>>>> 6e4f055 (Atualização)
 
 >>>>>>> 540f07e (Refatoração das funções subir e descer)
 int remover(FilaPrio *fp){
@@ -98,6 +131,7 @@ int consultar(FilaPrio *fp, Nave n){
         return 0;
     n = fp->naves[0];
     return 1;
+<<<<<<< HEAD
 >>>>>>> 891b19c (Refatoração das funções subir e descer)
 }
 
@@ -193,6 +227,10 @@ int cheia(FilaPrio *fp){
 =======
     if(fila_de_naves->quantidade_nave == 0){
 =======
+=======
+}
+
+>>>>>>> 6e4f055 (Atualização)
 //realoca a nova nave inserida na posição de prioridade correta
 //Considerando vetor iniciando em 1
 void subir(FilaPrio *fp, int filho){
@@ -256,9 +294,15 @@ int vazia(FilaPrio *fp){
         return 1;
     }else{
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 891b19c (Refatoração das funções subir e descer)
 >>>>>>> 540f07e (Refatoração das funções subir e descer)
+=======
+>>>>>>> 891b19c (Refatoração das funções subir e descer)
+=======
+>>>>>>> 6e4f055 (Atualização)
+>>>>>>> 17d11c0 (Atualização)
         return 0;
     }
 

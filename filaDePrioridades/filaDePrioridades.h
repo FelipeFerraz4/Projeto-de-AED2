@@ -35,6 +35,7 @@ typedef struct heap{
 }Heap;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 FilaPrio* criar_heap();
 
 //CRUD
@@ -50,6 +51,8 @@ int vazia(FilaPrio* );
 int tamanho(FilaPrio* );
 int cheia(FilaPrio* );
 =======
+=======
+>>>>>>> 17d11c0 (Atualização)
 <<<<<<< HEAD
 Heap* criar_heap();
 void libera_heap(Heap* fila_de_naves);
@@ -61,6 +64,8 @@ void libera_heap(Heap* fila_de_naves);
 void subir_heap(Heap* fila_de_naves, int filho);
 void descer_heap(Heap* fila_de_naves, int pai);
 =======
+=======
+>>>>>>> 6e4f055 (Atualização)
 FilaPrio* criar_heap();
 
 //CRUD
@@ -77,8 +82,14 @@ int tamanho(FilaPrio* );
 int cheia(FilaPrio* );
 
 
+<<<<<<< HEAD
 >>>>>>> 891b19c (Refatoração das funções subir e descer)
+<<<<<<< HEAD
 >>>>>>> 540f07e (Refatoração das funções subir e descer)
+=======
+=======
+>>>>>>> 6e4f055 (Atualização)
+>>>>>>> 17d11c0 (Atualização)
 
 int inserir_heap(Heap* fila_de_naves, Nave nave, int prioridade);
 int remove_heap(Heap* fila_de_naves);
