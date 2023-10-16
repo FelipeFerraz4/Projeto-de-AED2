@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-<<<<<<< HEAD
 #include <time.h>
 #include "filaDePrioridades.h"
 
@@ -147,10 +146,6 @@ void menu(){
     printf("\n[1] - Inserir naves\n[2] - Remover nave\n[3] - Imprimir naves\n[4] - Sair\n");
 }
 
-=======
-#include "filaDePrioridades.h"
-
->>>>>>> 4d9eab2c48b015ebbe6d2b45021d6e780a37f383
 int main()
 {
     Heap *fila_de_naves;
@@ -158,7 +153,6 @@ int main()
 
     get_nave_file(fila_de_naves);
 
-<<<<<<< HEAD
     get_nave_file(heap);
 
     do{
@@ -192,14 +186,6 @@ int main()
             break;
     }
     }while(option != 4);
-=======
-    //teste_heap(fila_de_naves);
-    option_programa(fila_de_naves);
-
-    printf("Hello world!\n");
-
-    libera_heap(fila_de_naves);
->>>>>>> 4d9eab2c48b015ebbe6d2b45021d6e780a37f383
 
     return 0;
 }
