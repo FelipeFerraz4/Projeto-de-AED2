@@ -11,12 +11,24 @@
 
 1691420360 /home/lucas/Documentos/UFCA/AED2/filaDePrioridades/filaDePrioridades.h
 
+<<<<<<< HEAD
 1693187047 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.c
+=======
+1697489295 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.c
+	<stdlib.h>
+	<time.h>
+	"filaDePrioridades.h"
+
+1697489321 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.h
+
+1697489295 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\main.c
+>>>>>>> 4d9eab2c48b015ebbe6d2b45021d6e780a37f383
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"filaDePrioridades.h"
 
+<<<<<<< HEAD
 1693187047 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.h
 
 1693187204 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\main.c
@@ -26,6 +38,9 @@
 	"filaDePrioridades.h"
 
 1693179773 source:/home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/filaDePrioridades.c
+=======
+1693049225 source:/home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/filaDePrioridades.c
+>>>>>>> 4d9eab2c48b015ebbe6d2b45021d6e780a37f383
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

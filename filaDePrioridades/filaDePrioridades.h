@@ -1,33 +1,40 @@
-#ifndef FILADEPRIORIDADES_H_INCLUDED
-#define FILADEPRIORIDADES_H_INCLUDED
-#define MAX_DEFAULT 50
+#ifndef HEAP_H_INCLUDED
+#define HEAP_H_INCLUDED
 
-typedef struct passageiro{
+#define DEFAULT_MAX 100
+
+typedef struct pessoa{
     int id;
-    char nome[MAX_DEFAULT];
+    char nome[DEFAULT_MAX];
     int idade;
-    char planeta[MAX_DEFAULT];
-}Passageiro;
+    char planeta[DEFAULT_MAX];
+}Pessoa;
 
 typedef struct recurso{
-    char nome[MAX_DEFAULT];
+    int id;
+    char nome[DEFAULT_MAX];
     int quantidade;
 }Recurso;
 
-typedef struct nave_espacial{
+typedef struct nave{
+    char nome[DEFAULT_MAX];
+    int quantidade_pessoas;
+    Pessoa pessoa[DEFAULT_MAX];
+    int quantidade_recursos;
+    Recurso recurso[DEFAULT_MAX];
+} Nave;
+
+typedef struct dados{
     int prioridade;
-    int tipo_nave;
-    int size_passageiro;
-    int size_recursos_transportados;
-    Passageiro passageiros[MAX_DEFAULT];
-    Recurso recurso[MAX_DEFAULT];
-}Nave;
+    Nave nave;
+} Dados;
 
-typedef struct fila_prioridade{
-    int size_nave;
-    Nave naves[MAX_DEFAULT];
-}FilaPrio;
+typedef struct heap{
+    int quantidade_nave;
+    Dados dados[DEFAULT_MAX];
+}Heap;
 
+<<<<<<< HEAD
 FilaPrio* criar_heap();
 
 //CRUD
@@ -44,5 +51,26 @@ int tamanho(FilaPrio* );
 int cheia(FilaPrio* );
 
 
+=======
+Heap* criar_heap();
+void libera_heap(Heap* fila_de_naves);
 
-#endif // FILADEPRIORIDADES_H_INCLUDED
+int tamanho_heap(Heap* fila_de_naves);
+int heap_cheio(Heap* fila_de_naves);
+int heap_vazio(Heap* fila_de_naves);
+
+void subir_heap(Heap* fila_de_naves, int filho);
+void descer_heap(Heap* fila_de_naves, int pai);
+>>>>>>> 4d9eab2c48b015ebbe6d2b45021d6e780a37f383
+
+int inserir_heap(Heap* fila_de_naves, Nave nave, int prioridade);
+int remove_heap(Heap* fila_de_naves);
+
+int verifica_prioridade(int prioridade);
+void teste_heap(Heap* fila_de_naves);
+
+int option_list();
+int option_programa(Heap* fila_de_naves);
+int get_nave_file(Heap* fila_de_naves);
+
+#endif // HEAP_H_INCLUDED
