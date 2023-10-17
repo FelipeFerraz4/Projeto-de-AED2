@@ -11,13 +11,6 @@
 
 1691420360 /home/lucas/Documentos/UFCA/AED2/filaDePrioridades/filaDePrioridades.h
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-1693187047 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.c
-=======
-=======
->>>>>>> 17d11c0 (Atualização)
-<<<<<<< HEAD
 1697489295 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.c
 	<stdlib.h>
 	<time.h>
@@ -26,74 +19,21 @@
 1697489321 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.h
 
 1697489295 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\main.c
-=======
-1693187047 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.c
->>>>>>> 1dbf721 (função para pegar as naves do arquivo)
-<<<<<<< HEAD
->>>>>>> 35490e4 (função para pegar as naves do arquivo)
-=======
-=======
-1693187047 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.c
->>>>>>> 6e4f055 (Atualização)
->>>>>>> 17d11c0 (Atualização)
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"filaDePrioridades.h"
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-1693187047 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.h
-
-1693187204 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\main.c
-=======
-=======
->>>>>>> 35490e4 (função para pegar as naves do arquivo)
-=======
->>>>>>> 17d11c0 (Atualização)
-<<<<<<< HEAD
 1693049225 source:/home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/filaDePrioridades.c
-=======
-1692749361 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.h
-=======
-=======
->>>>>>> 6e4f055 (Atualização)
-1693187047 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.h
->>>>>>> 1dbf721 (função para pegar as naves do arquivo)
-
-<<<<<<< HEAD
-1692749441 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\main.c
->>>>>>> 540f07e (Refatoração das funções subir e descer)
-=======
-1693187204 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\main.c
->>>>>>> 35490e4 (função para pegar as naves do arquivo)
-	<stdio.h>
-	<stdlib.h>
-	<time.h>
-	"filaDePrioridades.h"
-
-1693179773 source:/home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/filaDePrioridades.c
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 891b19c (Refatoração das funções subir e descer)
->>>>>>> 540f07e (Refatoração das funções subir e descer)
-=======
->>>>>>> 891b19c (Refatoração das funções subir e descer)
-=======
->>>>>>> 6e4f055 (Atualização)
->>>>>>> 17d11c0 (Atualização)
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"filaDePrioridades.h"
 
-1693179680 /home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/filaDePrioridades.h
+1693049235 /home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/filaDePrioridades.h
 
-1693179758 source:/home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/main.c
+1693049335 source:/home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"filaDePrioridades.h"
-
