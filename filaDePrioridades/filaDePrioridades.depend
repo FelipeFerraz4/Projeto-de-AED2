@@ -36,4 +36,35 @@
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
+<<<<<<< HEAD
 	"filaDePrioridades.h"
+=======
+	"filaDePrioridades.h"
+
+1697559924 source:c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\filadeprioridades.c
+	<stdlib.h>
+	<time.h>
+	"filaDePrioridades.h"
+
+1697559924 c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\filadeprioridades.h
+
+1697559924 source:c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"filaDePrioridades.h"
+
+1697560168 source:c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\projeto_ui.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"filaDePrioridades.h"
+
+1697560168 source:c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\teste.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"filaDePrioridades.h"
+
+>>>>>>> 741c5e9f2b9b6540a96ce783546fa64842ea0d33
