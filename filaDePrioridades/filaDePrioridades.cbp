@@ -41,6 +41,10 @@
 		<Unit filename="projeto_UI.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="tableHash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tableHash.h" />
 		<Unit filename="teste.c">
 			<Option compilerVar="CC" />
 		</Unit>
