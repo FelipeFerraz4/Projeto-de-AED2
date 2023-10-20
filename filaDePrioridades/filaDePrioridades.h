@@ -50,6 +50,7 @@ typedef struct tableHash {
     Lista lista_elementos[TAMANHO_HASH];
 } TableHash;
 
+//Funções do heap
 Heap* criar_heap();
 void libera_heap(Heap* fila_de_naves);
 
@@ -67,11 +68,12 @@ int remove_heap_ids(Heap* fila_de_naves, int ids_recursos[]);
 int verifica_prioridade(int prioridade);
 void teste_heap(Heap* fila_de_naves);
 
+//funções da interface com o usuário
 int option_list();
 int option_programa(Heap* fila_de_naves, TableHash* hash_nave);
 int get_nave_file(Heap* fila_de_naves);
 
-
+//funções da tableHash
 Elemento* cria_elemento(int id1, int id2, int id3);
 //void criarHashTable();
 int insereHash(TableHash* hash_nave, int id1, int id2, int id3);
