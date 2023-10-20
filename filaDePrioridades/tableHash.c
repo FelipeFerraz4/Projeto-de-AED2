@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "tableHash.h"
 #include "filaDePrioridades.h"
 
 // Função para criar uma nova lista encadeada

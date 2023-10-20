@@ -73,9 +73,8 @@ int option_list();
 int option_programa(Heap* fila_de_naves, TableHash* hash_nave);
 int get_nave_file(Heap* fila_de_naves);
 
-//funções da tableHash
+//funções da tabela hash
 Elemento* cria_elemento(int id1, int id2, int id3);
-//void criarHashTable();
 int insereHash(TableHash* hash_nave, int id1, int id2, int id3);
 int buscaHash(TableHash* hash_nave, int id1, int id2, int id3);
 void print_hash(TableHash* hash_nave);

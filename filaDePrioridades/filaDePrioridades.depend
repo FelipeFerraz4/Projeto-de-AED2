@@ -40,12 +40,13 @@
 	<time.h>
 	"filaDePrioridades.h"
 
-1697559924 source:c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\filadeprioridades.c
+1697798476 source:c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\filadeprioridades.c
+	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"filaDePrioridades.h"
 
-1697559924 c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\filadeprioridades.h
+1697799275 c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\filadeprioridades.h
 
 1697559924 source:c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\main.c
 	<stdio.h>
@@ -53,7 +54,7 @@
 	<string.h>
 	"filaDePrioridades.h"
 
-1697560168 source:c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\projeto_ui.c
+1697798477 source:c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\projeto_ui.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -91,5 +92,15 @@
 	<stdio.h>
 	<stdlib.h>
 	"tableHash.h"
+	"filaDePrioridades.h"
+
+1697798963 source:c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\tablehash.c
+	<stdio.h>
+	<stdlib.h>
+	"filaDePrioridades.h"
+
+1697798963 source:c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\testehash.c
+	<stdio.h>
+	<stdlib.h>
 	"filaDePrioridades.h"
 
