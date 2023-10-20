@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "tableHash.h"
+#include "filaDePrioridades.h"
 
 // Função para criar uma nova lista encadeada
 Elemento* cria_elemento(int id1, int id2, int id3) {
@@ -55,11 +56,74 @@ void criarHashTable() {
 
 */
 
-// Função para buscar um elemento na tabela hash
-int buscaHash(TableHash* hash_nave, int id1, int id2, int id3) {
+int buscaPosicao(TableHash* hash_nave, int id1, int id2, int id3){
     int soma, posicao;
     soma = id1 + id2 + id3;
     posicao = soma % TAMANHO_HASH;
+    int statusFim = 0;
+    int contador = 0;
+    while(contador < TAMANHO_HASH){
+        Elemento* atual = hash_nave->lista_elementos[posicao].elemento;
+
+        if(atual == NULL){
+            return posicao;
+        } else {
+            if(atual->id_1 == id1){
+                if(atual->id_2 == id2){
+                    if(atual->id_3 == id3){
+                        return posicao;
+                    }
+                }
+                if(atual->id_2 == id3){
+                    if(atual->id_3 == id2){
+                        return posicao;
+                    }
+                }
+            } else if(atual->id_1 == id2){
+                if(atual->id_2 == id1){
+                    if(atual->id_3 == id3){
+                        return posicao;
+                    }
+                }
+                if(atual->id_2 == id3){
+                    if(atual->id_3 == id1){
+                        return posicao;
+                    }
+                }
+            } else if(atual->id_1 == id3){
+                if(atual->id_2 == id2){
+                    if(atual->id_3 == id1){
+                        return posicao;
+                    }
+                }
+                if(atual->id_2 == id1){
+                    if(atual->id_3 == id2){
+                        return posicao;
+                    }
+                }
+            } else {
+                posicao += 1;
+                if(posicao >= TAMANHO_HASH){
+                    posicao = 0;
+                    if(statusFim == 1){
+                        printf("erro, não encontrado posicao para elemento");
+                        return -1;
+                    }
+                    statusFim = 1;
+                }
+            }
+        }
+        contador++;
+    }
+    return -1;
+}
+
+// Função para buscar um elemento na tabela hash
+int buscaHash(TableHash* hash_nave, int id1, int id2, int id3) {
+    int posicao = buscaPosicao(hash_nave, id1, id2, id3);
+    if(posicao == -1){
+        return -1;
+    }
     Elemento* atual = hash_nave->lista_elementos[posicao].elemento;
 
     while (atual != NULL) {
@@ -72,20 +136,24 @@ int buscaHash(TableHash* hash_nave, int id1, int id2, int id3) {
 }
 
 // Função para inserir um elemento na tabela hash
-void insereHash(TableHash* hash_nave, int id1, int id2, int id3) {
-    int soma, posicao;
-    soma = id1 + id2 + id3;
-    posicao = soma % TAMANHO_HASH;
+int insereHash(TableHash* hash_nave, int id1, int id2, int id3) {
+    int posicao = buscaPosicao(hash_nave, id1, id2, id3);
+    if(posicao == -1){
+        return -1;
+    }
 
     if (hash_nave->lista_elementos[posicao].elemento == NULL) {
         hash_nave->lista_elementos[posicao].elemento = cria_elemento(id1, id2, id3);
     } else {
-        if(buscaHash(hash_nave, id1, id2, id3) == 0){
+        int busca = buscaHash(hash_nave, id1, id2, id3);
+        if(busca == 0){
             Elemento* dado = cria_elemento(id1, id2, id3);
             dado->proximo = hash_nave->lista_elementos[posicao].elemento;
             hash_nave->lista_elementos[posicao].elemento = dado;
         }
     }
+
+    return 0;
 }
 
 void remove_lista_Hash(TableHash* hash_nave, int id1, int id2, int id3){

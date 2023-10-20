@@ -89,25 +89,25 @@ int option_list(){
         printf("2 - remover uma nave\n");
         printf("3 - Mostra naves cadastradas\n");
         printf("4 - Mostra lista de item das naves\n");
+        printf("5 - Mostra tabela hash\n");
         printf("0 - Sair do programa\n");
         printf("Digite a sua alternativa: ");
         scanf("%d", &option);
 
-        if(option < 0 || option > 4){
+        if(option < 0 || option > 5){
             printf("Erro, alternativa nao encontrada\n\n");
         }
 
-    }while(option < 0 || option > 4);
+    }while(option < 0 || option > 5);
 
     return option;
 }
 
-int option_programa(Heap* fila_de_naves){
+int option_programa(Heap* fila_de_naves, TableHash* hash_nave){
     int option = 1;
 
     do{
         option = option_list();
-
         if(option == 0){
             break;
         }
@@ -127,7 +127,22 @@ int option_programa(Heap* fila_de_naves){
             printf("Nave adicionada com sucesso\n\n");
         }
         else if(option == 2){
-            remove_heap(fila_de_naves);
+            int ids_recursos[3];
+            remove_heap_ids(fila_de_naves, ids_recursos);
+            insereHash(hash_nave, ids_recursos[0], ids_recursos[1], ids_recursos[2]);
+            int fendaDimensional = verificaLista(hash_nave, ids_recursos[0], ids_recursos[1], ids_recursos[2]);
+            if(fendaDimensional == 1){
+                    printf("A FENDA DIMENSIONAL AUMENTOU, AVANCEM NAVES RAPIDO RAPIDO\n");
+                for(int k = 0; k < 10; k++){
+                    remove_heap_ids(fila_de_naves, ids_recursos);
+                    if(k == 0){
+                        printf("UMA NAVE PASSOU\n");
+                    }
+                    else{
+                        printf("MAIS UMA NAVE PASSOU, RAPIDO\n");
+                    }
+                }
+            }
             printf("Nave removida com sucesso\n\n");
         }
         else if(option == 3){
@@ -137,7 +152,7 @@ int option_programa(Heap* fila_de_naves){
             }
             printf("\n");
         }
-        else{
+        else if(option == 4){
             for(int k = 0; k < tamanho_heap(fila_de_naves); k++){
                 printf("%d -> %d - ", k, fila_de_naves->dados[k].prioridade);
                 Nave nave = fila_de_naves->dados[k].nave;
@@ -160,6 +175,9 @@ int option_programa(Heap* fila_de_naves){
             }
 
             printf("\n");
+        }
+        else{
+            print_hash(hash_nave);
         }
     }while(option != 0);
 

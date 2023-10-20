@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "tableHash.h"
+#include "filaDePrioridades.h"
 
 #define SIZE_HASH 53
 
