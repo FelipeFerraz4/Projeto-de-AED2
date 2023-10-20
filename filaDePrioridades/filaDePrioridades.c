@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include "filaDePrioridades.h"
@@ -105,6 +106,27 @@ int remove_heap(Heap* fila_de_naves){
     }
     if(fila_de_naves->quantidade_nave == 0){
         return 0;
+    }
+
+    fila_de_naves->quantidade_nave--;
+    fila_de_naves->dados[0] = fila_de_naves->dados[fila_de_naves->quantidade_nave];
+    descer_heap(fila_de_naves, 0);
+    return 1;
+}
+
+int remove_heap_ids(Heap* fila_de_naves, int ids_recursos[]){
+    if(fila_de_naves == NULL){
+        return 0;
+    }
+    if(fila_de_naves->quantidade_nave == 0){
+        return 0;
+    }
+
+    //pegando os ids
+    int quantidade_recursos = fila_de_naves->dados[0].nave.quantidade_recursos;
+    for(int i = 0; i < quantidade_recursos; i++){
+        int id = fila_de_naves->dados[0].nave.recurso[i].id;
+        ids_recursos[i] = id;
     }
 
     fila_de_naves->quantidade_nave--;

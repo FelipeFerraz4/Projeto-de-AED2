@@ -48,6 +48,9 @@
 		<Unit filename="teste.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="testeHash.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
