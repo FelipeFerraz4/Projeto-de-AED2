@@ -2,16 +2,19 @@
 #include <stdlib.h>
 #include <string.h>
 #include "filaDePrioridades.h"
+#include "tableHash.h"
 
 int main()
 {
     Heap *fila_de_naves;
     fila_de_naves = criar_heap();
 
-    get_nave_file(fila_de_naves);
+    //get_nave_file(fila_de_naves);
 
     //teste_heap(fila_de_naves);
-    option_programa(fila_de_naves);
+    //option_programa(fila_de_naves);
+
+    teste_hash();
 
     printf("Hello world!\n");
 
