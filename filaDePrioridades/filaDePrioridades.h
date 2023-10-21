@@ -3,6 +3,7 @@
 
 #define DEFAULT_MAX 100
 
+//estrutura heap
 typedef struct pessoa{
     int id;
     char nome[DEFAULT_MAX];
@@ -34,6 +35,7 @@ typedef struct heap{
     Dados dados[DEFAULT_MAX];
 }Heap;
 
+//Funções da estrutura heap
 Heap* criar_heap();
 void libera_heap(Heap* fila_de_naves);
 
@@ -48,10 +50,17 @@ int inserir_heap(Heap* fila_de_naves, Nave nave, int prioridade);
 int remove_heap(Heap* fila_de_naves);
 
 int verifica_prioridade(int prioridade);
+
 void teste_heap(Heap* fila_de_naves);
 
+//Funções da interface com o usuário console
 int option_list();
 int option_programa(Heap* fila_de_naves);
 int get_nave_file(Heap* fila_de_naves);
+Pessoa pegar_pessoa(int id);
+Recurso pegar_recurso(int id);
+int pegar_quantidade(char item[]);
+int pegar_prioridade();
+Nave pegar_nave();
 
 #endif // HEAP_H_INCLUDED
