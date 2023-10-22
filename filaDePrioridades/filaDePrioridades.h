@@ -71,7 +71,12 @@ void teste_heap(Heap* fila_de_naves);
 //funções da interface com o usuário
 int option_list();
 int option_programa(Heap* fila_de_naves, TableHash* hash_nave);
-int get_nave_file(Heap* fila_de_naves);
+int pegar_arquivo_csv(Heap* fila_de_naves);
+Pessoa pegar_pessoa(int id);
+Recurso pegar_recurso(int id);
+int pegar_quantidade(char item[]);
+int pegar_prioridade();
+Nave pegar_nave();
 
 //funções da tabela hash
 Elemento* cria_elemento(int id1, int id2, int id3);

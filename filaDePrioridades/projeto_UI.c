@@ -184,7 +184,7 @@ int option_programa(Heap* fila_de_naves, TableHash* hash_nave){
     return option;
 }
 
-int get_nave_file(Heap* fila_de_naves){
+int pegar_arquivo_csv(Heap* fila_de_naves){
     char buffer[MAX_TAMANHO_LINHA_FILE];
 
     FILE* file = fopen("naves.csv", "r");

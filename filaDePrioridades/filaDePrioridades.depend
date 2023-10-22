@@ -11,20 +11,19 @@
 
 1691420360 /home/lucas/Documentos/UFCA/AED2/filaDePrioridades/filaDePrioridades.h
 
-1697764632 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.c
+1697850359 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"filaDePrioridades.h"
 
-1697767749 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.h
+1697851097 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\filadeprioridades.h
 
-1697764236 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\main.c
+1697851097 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"filaDePrioridades.h"
-	"tableHash.h"
 
 1693049225 source:/home/lucas/Documentos/UFCA/AED2/Projeto-de-AED2/filaDePrioridades/filaDePrioridades.c
 	<stdio.h>
@@ -67,7 +66,7 @@
 	<time.h>
 	"filaDePrioridades.h"
 
-1697765987 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\projeto_ui.c
+1697851097 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\projeto_ui.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -80,18 +79,16 @@
 	<time.h>
 	"filaDePrioridades.h"
 
-1697762870 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\testehash.c
+1697850359 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\testehash.c
 	<stdio.h>
 	<stdlib.h>
-	"tableHash.h"
 	"filaDePrioridades.h"
 
 1697762870 e:\projetos_em_c\projeto-de-aed2\filadeprioridades\tablehash.h
 
-1697767719 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\tablehash.c
+1697850359 source:e:\projetos_em_c\projeto-de-aed2\filadeprioridades\tablehash.c
 	<stdio.h>
 	<stdlib.h>
-	"tableHash.h"
 	"filaDePrioridades.h"
 
 1697798963 source:c:\users\softex\documents\github\projeto-de-aed2\filadeprioridades\tablehash.c

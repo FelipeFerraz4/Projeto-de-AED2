@@ -14,7 +14,7 @@ int main()
     hash_nave = cria_hash();
 
     //lendo o arquivo csv
-    get_nave_file(fila_de_naves);
+    pegar_arquivo_csv(fila_de_naves);
 
     //testes de cada estrutura (heap e hash)
     //teste_heap(fila_de_naves);
